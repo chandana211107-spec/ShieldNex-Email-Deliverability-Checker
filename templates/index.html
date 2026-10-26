@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Email Deliverability Checker</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+    <div class="page">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <div class="logo">
+                ShieldNex
+            </div>
+
+            <div class="header-text">
+                Email Deliverability Checker
+            </div>
+
+        </header>
+
+
+        <!-- Main Content -->
+
+        <main class="main">
+
+            <section class="hero">
+
+                <h1>
+                    Email Deliverability Checker
+                </h1>
+
+                <p>
+                    Analyze email addresses using format validation
+                    and domain mail-server checks.
+                </p>
+
+            </section>
+
+
+            <!-- Input Card -->
+
+            <section class="card">
+
+                <label for="emails">
+                    Email Addresses
+                </label>
+
+                <p class="instruction">
+                    Enter one email address per line.
+                </p>
+
+
+                <textarea
+                    id="emails"
+                    placeholder="example@gmail.com&#10;user@company.com&#10;hello@example.com"
+                ></textarea>
+
+
+                <button
+                    id="checkButton"
+                    onclick="checkEmails()"
+                >
+                    Check Emails
+                </button>
+
+
+                <div id="loading" class="loading">
+                    Checking email addresses...
+                </div>
+
+            </section>
+
+
+            <!-- Summary -->
+
+            <section
+                id="summary"
+                class="summary hidden"
+            >
+
+                <div class="summary-card delivered-card">
+
+                    <span class="summary-number"
+                          id="deliveredCount">
+                        0
+                    </span>
+
+                    <span class="summary-label">
+                        Likely Delivered
+                    </span>
+
+                </div>
+
+
+                <div class="summary-card bounce-card">
+
+                    <span class="summary-number"
+                          id="bounceCount">
+                        0
+                    </span>
+
+                    <span class="summary-label">
+                        Likely Bounce
+                    </span>
+
+                </div>
+
+
+                <div class="summary-card unknown-card">
+
+                    <span class="summary-number"
+                          id="unknownCount">
+                        0
+                    </span>
+
+                    <span class="summary-label">
+                        Unknown
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- Results -->
+
+            <section
+                id="results"
+                class="results"
+            ></section>
+
+
+            <!-- Explanation -->
+
+            <section class="info-card">
+
+                <h2>
+                    How it works
+                </h2>
+
+                <div class="info-grid">
+
+                    <div>
+                        <strong>1. Format Check</strong>
+                        <p>
+                            Verifies whether the email follows
+                            a valid email format.
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <strong>2. MX Check</strong>
+                        <p>
+                            Checks whether the domain has
+                            configured mail servers.
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <strong>3. Result</strong>
+                        <p>
+                            Classifies the address as likely to be
+                            delivered, likely to bounce, or unknown
+                            based on available evidence.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <p class="disclaimer">
+
+                <strong>Note:</strong>
+                An MX record confirms that a domain has mail
+                servers, but it does not prove that a specific
+                mailbox exists. Therefore, some addresses are
+                reported as <strong>Unknown</strong>.
+
+            </p>
+
+        </main>
+
+
+        <!-- Footer -->
+
+        <footer class="footer">
+
+            Email Deliverability Checker
+            <span>•</span>
+            Built for ShieldNex Software Development Task
+
+        </footer>
+
+    </div>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
