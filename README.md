@@ -245,33 +245,15 @@ ShieldNex-Email-Checker/
 
 ## Main Application
 
-Place your dashboard screenshot in:
-
-```text
-screenshots/dashboard.png
-```
-
-Then add:
-
-```markdown
-![ShieldNex Email Deliverability Checker](screenshots/dashboard.png)
-```
+<img width="1898" height="870" alt="image" src="https://github.com/user-attachments/assets/60a5bb7b-dd47-4925-b348-ba70a8693109" />
+<img width="1900" height="863" alt="image" src="https://github.com/user-attachments/assets/38db4862-2aa5-4c46-9751-db176591688b" />
 
 ## Results
 
 Place your results screenshot in:
-
-```text
-screenshots/results.png
-```
-
-Then add:
-
-```markdown
-![Email Verification Results](screenshots/results.png)
-```
-
----
+<img width="1897" height="867" alt="image" src="https://github.com/user-attachments/assets/4276dbdd-cb84-4660-a6cb-fda40878b52d" />
+Email Verification Results:
+<img width="1882" height="867" alt="image" src="https://github.com/user-attachments/assets/88cf0c23-4d49-40c9-aeea-f0b431c621b9" />
 
 # ⚙️ How to Run
 
