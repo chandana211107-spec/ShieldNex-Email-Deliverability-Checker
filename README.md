@@ -319,6 +319,12 @@ The application is designed for deployment using **Render**.
 ### Live Application
 
 https://shieldnex-email-deliverability-checker.onrender.com
+
+
+### GitHub Repository
+
+https://github.com/chandana211107-spec/ShieldNex-Email-Deliverability-Checker
+
 ---
 
 # 🔮 Future Enhancements
