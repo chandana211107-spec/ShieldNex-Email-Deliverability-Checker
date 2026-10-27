@@ -336,14 +336,12 @@ The application is designed for deployment using **Render**.
 
 ### Live Application
 
-**Coming soon**
+[https://shieldnex-email-deliverability-checker.onrender.com](url)
 
 ### GitHub Repository
 
-**Coming soon**
-
-> The live URL and repository URL will be added after deployment.
-
+[https://github.com/chandana211107-spec/ShieldNex-Email-Deliverability-Checker
+](url)
 ---
 
 # 🔮 Future Enhancements
